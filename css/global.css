@@ -3,6 +3,12 @@ Botoes
 Cores de textos*/
 
 /*CSS RESET */
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+    font-style: normal;
+    font-display: swap;
+}
 
 :root{
     --background-primary-color: #ffffff;
@@ -14,14 +20,16 @@ Cores de textos*/
 
     --text-primary-color:#222222;
     --text-secondary-color: #ffffff;
+    font-family: "Montserrat";
     
-
 }
 
 body, img, h1, p, fieldset, legend, input, select, label, textarea, button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat";
+    
 }
 
 h1{
