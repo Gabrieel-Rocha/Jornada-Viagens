@@ -8,13 +8,21 @@ header {
   position: relative;
 }
 
-.logo {
+.logo-mobile {
   display: inline-block;
   width: 68px;
   height: 64px;
 }
 
-.navigation-menu {
+.img-mobile {
+  display: block;
+}
+
+.img-desktop {
+  display: none;
+}
+
+.logo-mobile .navigation-menu {
   margin-top: 24px;
 }
 
@@ -44,19 +52,23 @@ nav {
 }
 
 .list-links li a {
-    color: var(--text-secondary-color);
-    text-decoration: none;
-    font-size: 20px;
+  color: var(--text-secondary-color);
+  text-decoration: none;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .navigation-menu {
     margin-top: 0;
     width: 465px;
-    
   }
   .navigation-menu label {
     display: none;
+  }
+
+  .navigation-menu a:hover {
+    color: var(--primary-color);
+    transition: 0.3s;
   }
 
   .navigation-menu ul {
@@ -68,7 +80,30 @@ nav {
     display: block;
   }
 
-.navigation-menu li {
+  .navigation-menu li {
     margin-top: 0;
+  }
 }
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 38px 165px;
+  }
+
+  .logo {
+    width: 260px;
+    height: 64px;
+  }
+  .img-desktop {
+    display: block;
+  }
+  .img-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  header {
+    padding: 38px 160px;
+  }
 }
